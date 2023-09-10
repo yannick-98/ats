@@ -1,0 +1,388 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #c9c7c9;
+}
+
+a:hover {
+    transform: scale(1.1);
+    color: #ffffff;
+}
+
+a:active {
+    color: #00ff00;
+}
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.inicio {
+    background-image: url(../fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-width: 30%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inicio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.682);
+}
+
+.header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 40rem;
+    padding-top: 20px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.head {
+    flex: 1;
+    padding: 20px;
+}
+
+.head img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.navegador {
+    animation: slide-left 2s;
+}
+
+.navegador a {
+    padding-left: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #ffffff;
+}
+
+#logo img {
+    height: 2.5rem;
+    animation: slide-bottom 2s;
+}
+
+@keyframes slide-bottom {
+    0% {
+        transform: translateY(-100px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+.rrss {
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-end;
+    height: 2rem;
+    animation: slide-right 2s;
+}
+
+.instagram-icon,
+.tiktok-icon,
+.twitter-icon {
+    padding-right: 50px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.instagram-icon:hover {
+    transform: scale(1.2);
+}
+
+.tiktok-icon:hover {
+    transform: scale(1.2);
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 90%;
+    /* height: 600px; */
+    height: 60%;
+    min-width: 60rem;
+    margin-top: 160px;
+}
+
+.contenido {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carrusel {
+    width: 200%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tarjetaCarrusel {
+    width: calc(100% / 2);
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjetaCarrusel img {
+    width: 50px;
+    height: auto;
+}
+
+.flechaPrev {
+    animation: scale-up-center 2s;
+}
+
+.flechaNext {
+    animation: scale-up-center 2s;
+}
+
+.posts {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #ffffff;
+    animation: scale-up-center 2s;
+}
+
+.postsrow {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.post {
+    height: 100%;
+    width: calc(100% / 5);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post img {
+    width: 90%;
+    height: 60%;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.flechasCarrusel {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedor-formacion {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 600px;
+    min-width: 60rem;
+    margin-top: 120px;
+}
+
+.apartado-formacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: calc(100% / 3);
+    color: #ffffff;
+}
+
+.apartado-formacion img {
+    border: 5px solid white;
+    border-radius: 30px;
+    max-width: 450px;
+    max-height: 284px;
+}
+
+.izq {
+    animation: scale-up-right 2s;
+}
+
+.cnt {
+    animation: scale-up-center 2s;
+}
+
+.dch {
+    animation: scale-up-left 2s;
+}
+
+.menu {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    max-height: 100px;
+    width: 100%;
+    bottom: 20px;
+}
+
+.item {
+    height: 100px;
+    width: auto;
+}
+
+.item img {
+    width: 15rem;
+}
+
+.item1 img {
+    animation: slide-right 2s;
+}
+
+.item2 img {
+    transform: scale(1.2);
+    animation: scale-up-center 2s;
+}
+
+.item3 img {
+    animation: slide-left 2s;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(-200px)
+    }
+
+    100% {
+        transform: translateX(0)
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(200px)
+    }
+
+    100% {
+        transform: translateX(0)
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(0)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+@keyframes scale-up-left {
+    0% {
+        transform: scale(0);
+        transform-origin: left center
+    }
+
+    100% {
+        transform: scale(1);
+        transform-origin: left center
+    }
+}
+
+@keyframes scale-up-right {
+    0% {
+        transform: scale(0);
+        transform-origin: right center
+    }
+
+    100% {
+        transform: scale(1);
+        transform-origin: right center
+    }
+}
+
+.item1 img:hover {
+    transform: scale(1.2) rotate(-10deg);
+}
+
+.item2 img:hover {
+    transform: scale(1.2) translateY(-20px);
+}
+
+.item3 img:hover {
+    transform: scale(1.2) rotate(10deg);
+}
